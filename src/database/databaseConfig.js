@@ -1,3 +1,8 @@
+/** TODO
+ *  [] crear un usuario y contraseña seguro para la conexión --> pestaña "Cuentas de usuarios" en http://localhost/phpmyadmin/index.php
+ *
+ */
+
 require("dotenv").config();
 
 /** Creando conexión con la base de datos */
