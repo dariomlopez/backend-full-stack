@@ -1,4 +1,4 @@
-const database = require("../database/initDatabase");
+const database = require("../database/databaseConfig");
 
 const Exercise = {
   /** query para obtener todos los ejercicios */
