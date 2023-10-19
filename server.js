@@ -11,12 +11,19 @@ createDB();
 /** Importar modelo de ejercicios */
 const Exercise = require("./src/models/exerciseModel");
 
+/** Middleware para parsear JSON */
+app.use(express.json());
+
 /** Rutas */
 /** Obtener todos los ejercicios */
 app.get("/ejercicios", async (request, response) => {
   try {
-    
+    const ejercicios = await Exercise.getAllExercises();
+    response.json(ejercicios);
   } catch (error) {
-
+    console.error("Error a obtener ejercicios:", error);
+    response.status(500).send("Error del servidor");
   }
-})
+});
+
+/** Obtener ejercicio por ID */
