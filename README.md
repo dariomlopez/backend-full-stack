@@ -1,7 +1,7 @@
 # backend-ejercicios-full-stack
 Repositorio para procesar ejercicios de programación en formato JSON
 
-- [ ] Crear un backend con Node o con Flask para recibir requests y devolver responses: `server.js` o `app.py`
+- [ x] Crear un backend con Node o con Flask para recibir requests y devolver responses: `server.js` o `app.py`
 - [ ] Definir los endpoints necesarios para la app
 - [x ] Conectar con un almacenamiento persistente (JSON valdría pero mejor una base de datos)
 - [x ] Crear las tablas necesarias en base a la información que se deba guardar
