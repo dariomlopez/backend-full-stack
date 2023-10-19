@@ -11,6 +11,9 @@ createDB();
 /** Importar modelo de ejercicios */
 const Exercise = require("./src/models/exerciseModel");
 
+/** Importar las rutas */
+const ejerciciosRoutes = requier("./src/routes/exercisesRoutes");
+
 /** Middleware para parsear JSON */
 app.use(express.json());
 
@@ -43,7 +46,7 @@ app.get("/ejercicios/:id", async (request, response) => {
 });
 
 /** Crear un ejercicio */
-app.post("ejercicios", async (request, response) => {
+app.post("/ejercicios", async (request, response) => {
   try {
     const { titulo, explicacion, tags, pistas } = request.body;
     const nuevoEjercicio = await Exercise.createExercise(titulo, explicacion, tags, pistas);
