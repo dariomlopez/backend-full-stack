@@ -29,3 +29,9 @@ const solucionChatGPT = async (enunciado) => {
 };
 
 /** Pista por chatGPT */
+const pistaChatGPT = async (enunciado) => {
+  const prompt = `Proporciona pistas para resolver el siguiente ejercicio: \n${enunciado}`;
+  return await respuestaChatGPT(prompt);
+};
+
+module.exports = { solucionChatGPT, pistaChatGPT };
