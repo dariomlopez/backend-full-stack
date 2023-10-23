@@ -5,7 +5,6 @@
 const dbConfig = require("./databaseConfig");
 const mysql = require("mysql2/promise");
 
-
 const pool = mysql.createPool(dbConfig);
 
 const createDB = async () => {
@@ -17,6 +16,7 @@ const createDB = async () => {
       CREATE TABLE IF NOT EXISTS ejercicios (
         id INT AUTO_INCREMENT PRIMARY KEY,
         titulo VARCHAR(255) NOT NULL,
+        enunciado, TEXT NOT NULL,
         explicacion TEXT NOT NULL, 
         tags JSON,
         pistas TEXT NOT NULL,

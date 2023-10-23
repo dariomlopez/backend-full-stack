@@ -1,14 +1,22 @@
 /** TODO:
  * [] API de chatgpt
  */
-
+const openai = require("openai");
+const fs = require("fs");
 const axios = require("axios");
+require("dotenv").config();
+/** API_KEYS */
+const organization = "org-PcyAASZa7mn9hOq9B8FDPlir";
+const apiKey = process.env.OPENAI_API_KEY;
+
+/** Cliente openai */
+const client = new openai.OpenAIApi({ key:apiKey, organization: organization });
 
 /** Respuesta chatGPT */
 const respuestaChatGPT = async (input) => {
   try {
     /** Sustituir por API */
-    const response = await axios.post("API de CHATGPT", 
+    const response = await axios.post("https://api.openai.com/v1/completions", 
     {
       prompt: input,
       max_tokens: 2000,
@@ -18,7 +26,9 @@ const respuestaChatGPT = async (input) => {
     return response.data.choices[0].text.trim();
 
   } catch (error) {
-    throw error;
+    /** Manejo de errores si la petición a chatgpt falla */
+    console.error("Error en la peticion a la API de OpenAI", error.message);
+    throw new Error("No se pudo obtener una respuesta de ChatGPT.");
   }
 };
 

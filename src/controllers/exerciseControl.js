@@ -28,9 +28,9 @@ const exerciseController = {
 
   /** crear nuevo ejercicio */
   createNewExercise: async (request, response) => {
-    const { titulo, explicacion, tags } = request.body;
+    const { titulo, enunciado, explicacion, tags } = request.body;
     try {
-      const newExercise = await Exercise.createExercise(titulo, explicacion, tags);
+      const newExercise = await Exercise.createExercise(titulo, enunciado, explicacion, tags);
       response.json(newExercise);
     } catch (error) {
       response.status(500).json({ error: "Error del servidor" });
@@ -40,16 +40,16 @@ const exerciseController = {
   /** Solución y pistas para un ejercicio por ID */
   exerciseHelpById: async (request, response) => {
     try {
-      const ejercise = await Exercise.getExerciseById(request.params.id);
+      const exercise = await Exercise.getExerciseById(request.params.id);
 
       if(!ejercicio) {
         return response.status(404).send("Ejercicio no encontrado")
       }
 
-      const solucion = await solucionChatGPT(ejercise.explicacion);
-      const pistas = await pistaChatGPT(ejercise.explicacion);
+      const solucion = await solucionChatGPT(exercise.explicacion);
+      const pistas = await pistaChatGPT(exercise.explicacion);
 
-      response.json({ ejercise, solucion, pistas });
+      response.json({ exercise, solucion, pistas });
 
     } catch (error) {
       console.error("Error al obtener ejercicio", error);

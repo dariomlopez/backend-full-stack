@@ -15,11 +15,12 @@ const database = mysql.createConnection({
   database: process.env.DB_NAME || "ejercicios",
 });
 
+/** Manejo de errores en la conexión */
 database.connect((err) => {
   if(err) throw err;
   console.log("Conexión a base de datos realizada con exito");
 });
 
-
+/** Inicialización d ela base de datos llamando a la función creada en el archivo initDatabase.js */
 createDB();
 module.exports = database;
