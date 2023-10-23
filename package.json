@@ -4,6 +4,8 @@
   "description": "Repositorio para procesar ejercicios de programación en formato JSON",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
+    "iniDB": "node initDatabase.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
