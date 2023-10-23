@@ -1,15 +1,19 @@
 
-const axios = require("axios");
 require("dotenv").config();
+/** Siguiendo la documentación de OpenAI para organizaciones: https://platform.openai.com/docs/api-reference/authentication */
+const { Configuration, OpenAIApi } = require("openai");
 /** API_KEYS */
-const organization = "org-PcyAASZa7mn9hOq9B8FDPlir";
-const apiKey = process.env.OPENAI_API_KEY;
+const configuration = new Configuration({
+  organization: "org-PcyAASZa7mn9hOq9B8FDPlir",
+  apiKey: process.env.OPENAI_API_KEY,
+});
+
+const openai = new OpenAIApi(configuration);
 
 /** Respuesta chatGPT */
 const respuestaChatGPT = async (input) => {
   try {
-    /** Sustituir por API */
-    const response = await axios.post(apiKey, 
+    const response = await openai.createChatCompletion( 
     {
       prompt: input,
       max_tokens: 2000,
