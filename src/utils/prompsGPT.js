@@ -1,16 +1,9 @@
-/** TODO:
- * [] API de chatgpt
- */
-const openai = require("openai");
-const fs = require("fs");
+
 const axios = require("axios");
 require("dotenv").config();
 /** API_KEYS */
 const organization = "org-PcyAASZa7mn9hOq9B8FDPlir";
 const apiKey = process.env.OPENAI_API_KEY;
-
-/** Cliente openai */
-const client = new openai.OpenAIApi({ key:apiKey, organization: organization });
 
 /** Respuesta chatGPT */
 const respuestaChatGPT = async (input) => {
