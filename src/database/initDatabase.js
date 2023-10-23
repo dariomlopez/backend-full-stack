@@ -10,8 +10,8 @@ const pool = mysql.createPool(dbConfig);
 const createDB = async () => {
   try {
     const connection = await pool.getConnection(async (conn) => conn);
-    await connection.query("CREATE DATABASE IF NOT EXISTS ejercicios");
-    await connection.query("USE ejercicios");
+    await connection.query("CREATE DATABASE IF NOT EXISTS ejercicios_programacion");
+    await connection.query("USE ejercicios_programacion");
     await connection.query(`
       CREATE TABLE IF NOT EXISTS ejercicios (
         id INT AUTO_INCREMENT PRIMARY KEY,
