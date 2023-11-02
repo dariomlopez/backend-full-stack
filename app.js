@@ -12,7 +12,7 @@ createDB();
 const Exercise = require("./src/models/exerciseModel");
 
 /** Importar las rutas */
-const ejerciciosRoutes = requier("./src/routes/exercisesRoutes");
+const ejerciciosRoutes = require("./src/routes/exercisesRoutes");
 
 /** Middleware para parsear JSON */
 app.use(express.json());

@@ -42,7 +42,7 @@ const exerciseController = {
     try {
       const exercise = await Exercise.getExerciseById(request.params.id);
 
-      if(!ejercicio) {
+      if(!exercise) {
         return response.status(404).send("Ejercicio no encontrado")
       }
 

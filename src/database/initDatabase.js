@@ -2,10 +2,10 @@
  *  [] crear un usuario y contraseña seguro para la conexión --> pestaña "Cuentas de usuarios" en http://localhost/phpmyadmin/index.php
  *
  */
-const dbConfig = require("./databaseConfig");
+const database = require("./databaseConfig");
 const mysql = require("mysql2/promise");
 
-const pool = mysql.createPool(dbConfig);
+const pool = mysql.createPool(database);
 
 const createDB = async () => {
   try {
@@ -26,8 +26,10 @@ const createDB = async () => {
     connection.release();
     console.log("Base de datos inicializada");
   } catch (err) {
-    console.error("Error al inicializar base de datos", error);
+    console.error("Error al inicializar base de datos", err);
   }
 };
 
-module.exports = { pool, createDB };
+module.exports = {
+  createDB: createDB
+};
