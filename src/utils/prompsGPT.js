@@ -1,14 +1,11 @@
 
 require("dotenv").config();
 /** Siguiendo la documentación de OpenAI para organizaciones: https://platform.openai.com/docs/api-reference/authentication */
-const { Configuration, OpenAIApi } = require("openai");
+const OpenAIApi = require("openai");
 /** API_KEYS */
-const configuration = new Configuration({
-  organization: "org-PcyAASZa7mn9hOq9B8FDPlir",
+const openai = new OpenAIApi.OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
 });
-
-const openai = new OpenAIApi(configuration);
 
 /** Respuesta chatGPT */
 const respuestaChatGPT = async (input) => {

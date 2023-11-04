@@ -3,8 +3,8 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 /** Importar configuración base de datos */
-const database = require(".src/database/databaseConfig");
-const { createDB } = require(".src/database/initDatabase");
+const database = require("./src/database/databaseConfig");
+const { createDB } = require("./src/database/initDatabase");
 /** Iniciar la base de datos */
 createDB();
 

@@ -9,18 +9,17 @@ const pool = mysql.createPool(database);
 
 const createDB = async () => {
   try {
-    const connection = await pool.getConnection(async (conn) => conn);
-    await connection.query("CREATE DATABASE IF NOT EXISTS ejercicios_programacion");
-    await connection.query("USE ejercicios_programacion");
+    const connection = await pool.getConnection();
+    await connection.query("CREATE DATABASE IF NOT EXISTS ejercicios");
+    await connection.query("USE ejercicios");
     await connection.query(`
       CREATE TABLE IF NOT EXISTS ejercicios (
         id INT AUTO_INCREMENT PRIMARY KEY,
         titulo VARCHAR(255) NOT NULL,
-        enunciado, TEXT NOT NULL,
+        enunciado TEXT NOT NULL,
         explicacion TEXT NOT NULL, 
         tags JSON,
-        pistas TEXT NOT NULL,
-        creado TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+        pistas TEXT NOT NULL
       )
     `);
     connection.release();
