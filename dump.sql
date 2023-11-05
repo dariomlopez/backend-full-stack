@@ -15,6 +15,7 @@ CREATE TABLE IF NOT EXISTS ejercicios (
   explicacion TEXT NOT NULL,
   tags JSON,
   pistas TEXT NOT NULL,
+  solucion TEXT NOT NULL
   -- creado TIMESTAMP DEFAULT CURRENT_TIMESTAMP  
 );
 

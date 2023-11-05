@@ -19,7 +19,8 @@ const createDB = async () => {
         enunciado TEXT NOT NULL,
         explicacion TEXT NOT NULL, 
         tags JSON,
-        pistas TEXT NOT NULL
+        pistas TEXT NOT NULL,
+        solucion TEXT NOT NULL
       )
     `);
     connection.release();

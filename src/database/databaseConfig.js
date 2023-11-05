@@ -1,7 +1,3 @@
-/** TODO
- *  [] crear un usuario y contraseña seguro para la conexión --> pestaña "Cuentas de usuarios" en http://localhost/phpmyadmin/index.php
- *
- */
 
 const mysql = require("mysql2");
 require("dotenv").config();

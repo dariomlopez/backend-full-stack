@@ -38,7 +38,7 @@ const exerciseController = {
   },
 
   /** Solución y pistas para un ejercicio por ID */
-  exerciseHelpById: async (request, response) => {
+  clueByExerciseId: async (request, response) => {
     try {
       const exercise = await Exercise.getExerciseById(request.params.id);
 
@@ -56,6 +56,26 @@ const exerciseController = {
       response.status(500).send("Error del servidor");
     }
   },
+
+  /** Solución y pistas para un ejercicio por ID */
+  solutionByExerciseId: async (request, response) => {
+    try {
+      const exercise = await Exercise.getExerciseById(request.params.id);
+
+      if(!exercise) {
+        return response.status(404).send("Ejercicio no encontrado")
+      }
+
+      const solucion = await solucionChatGPT(exercise.explicacion);
+      //const pistas = await pistaChatGPT(exercise.explicacion);
+
+      response.json({ exercise, solucion });
+
+    } catch (error) {
+      console.error("Error al obtener ejercicio", error);
+      response.status(500).send("Error del servidor");
+    }
+  }
 };
 
 module.exports = exerciseController;
