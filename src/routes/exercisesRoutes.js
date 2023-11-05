@@ -45,7 +45,7 @@ router.get("/:id", async (request, response) => {
       return response.status(404).send("Pista no encontrada");
     }
 
-    response.json({pista});
+    response.json(pista);
   } catch (error) {
     console.error("Error al obtener la pista del ejercicio", error);
     response.status(500).send("Error del servidor");

@@ -37,7 +37,7 @@ const exerciseController = {
     }
   },
 
-  /** Solución y pistas para un ejercicio por ID */
+  /** pistas para un ejercicio por ID */
   clueByExerciseId: async (request, response) => {
     try {
       const exercise = await Exercise.getExerciseById(request.params.id);
@@ -57,7 +57,7 @@ const exerciseController = {
     }
   },
 
-  /** Solución y pistas para un ejercicio por ID */
+  /** Solución para un ejercicio por ID */
   solutionByExerciseId: async (request, response) => {
     try {
       const exercise = await Exercise.getExerciseById(request.params.id);
