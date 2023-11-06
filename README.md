@@ -17,9 +17,9 @@ Para comenzar con el proyecto, sigue estos pasos:
 2. Desde tu terminal, accede a tu servidor de MySQL e inicia sesión con un usuario que tenga permisos para crear bases de datos.
 3. Ejecuta el script `dump.sql` que se encuentra en la raíz del proyecto. Puedes hacerlo usando el siguiente comando:
 
-mysql -u <usuario> -p ejercicios_de_programación < dump.sql
+mysql -u `<usuario>` -p `<password>` < dump.sql
 
-Asegúrate de reemplazar `<usuario>` con tu nombre de usuario de MySQL.
+Asegúrate de reemplazar `<usuario>` y `<password>` con tus credenciales de usuario de MySQL.
 4. La base de datos y la tabla de ejercicios se crearán y se llenarán con ejemplos de datos.
 
 ¡Listo! Ahora tienes una base de datos lista para usar en tu aplicación.
