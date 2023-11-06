@@ -9,7 +9,7 @@ Para comenzar con el proyecto, sigue estos pasos:
 3. Configura la base de datos ejecutando el siguiente comando:
 `npm run iniDB`.
 
-4. Inicia la aplicación con `npm start`.
+4. Inicia la aplicación con `npm start app.js`.
 
 ## Instrucciones para inicializar la base de datos:
 
