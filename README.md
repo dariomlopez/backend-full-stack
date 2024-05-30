@@ -1,4 +1,14 @@
 # backend-ejercicios-full-stack
+#### Proyecto final de curso del Certificado de Profesionalidad IFCT0609 Programación de Sistemas Informáticos.
+--
+El backend de esta plataforma fue desarrollado con las siguientes tecnologías y funcionalidades:
+
+- Desarrollo de endpoints para la web utilizando Express.js.
+- Implementación y gestión de conexiones a bases de datos utilizando Express.js para asegurar la integridad y eficiencia de los sistemas.
+- Integración y configuración de ChatGPT como asistente, brindando orientación y soluciones a los retos de programación planteados en la plataforma.
+- Diseño y desarrollo de consultas especializadas a bases de datos, utilizando Node.js y Express.js, para optimizar la interacción entre los usuarios y ChatGPT.
+
+
 ## Instrucciones para inicializar la aplicación:
 
 Para comenzar con el proyecto, sigue estos pasos:
