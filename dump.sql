@@ -1,7 +1,6 @@
 -- Active: 1699129953242@@127.0.0.1@3306@ejercicios
 -- Dump de ejemplo de la base de datos para ejercicios de programación
 
--- Crear base de datos si no existe
 CREATE DATABASE IF NOT EXISTS ejercicios;
 
 -- Usar dicha base de datos
