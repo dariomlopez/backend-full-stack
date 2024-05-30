@@ -7,6 +7,12 @@ El backend de esta plataforma fue desarrollado con las siguientes tecnologías y
 - Integración y configuración de ChatGPT como asistente, brindando orientación y soluciones a los retos de programación planteados en la plataforma.
 - Diseño y desarrollo de consultas especializadas a bases de datos, utilizando Node.js y Express.js, para optimizar la interacción entre los usuarios y ChatGPT.
 
+### Algunas de las técnologias usadas:
+![JavaScript](https://img.shields.io/badge/JavaScript-ffee00?style=plastic&logo=javascript&logoColor=black)
+![ExpressJS](https://img.shields.io/badge/ExpressJS-gray?style=plastic&logo=express)
+![Node.JS](https://img.shields.io/badge/Node.JS-83FF33?style=plastic&logo=node.js)
+![MySQL](https://img.shields.io/badge/MySQL-00aeff?style=plastic&logo=mysql&logoColor=black)
+![ChatGPT](https://img.shields.io/badge/ChatGPT-899867?style=plastic)
 
 ## Instrucciones para inicializar la aplicación:
 
@@ -30,6 +36,6 @@ mysql -u `<usuario>` -p `<password>` < dump.sql
 
 Asegúrate de reemplazar `<usuario>` y `<password>` con tus credenciales de usuario de MySQL.
 
-4.La base de datos y la tabla de ejercicios se crearán y se llenarán con ejemplos de datos.
+4. La base de datos y la tabla de ejercicios se crearán y se llenarán con ejemplos de datos.
 
 ¡Listo! Ahora tienes una base de datos lista para usar en tu aplicación.
