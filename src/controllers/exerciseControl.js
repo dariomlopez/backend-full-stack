@@ -67,7 +67,6 @@ const exerciseController = {
       }
 
       const solucion = await solucionChatGPT(exercise.explicacion);
-      //const pistas = await pistaChatGPT(exercise.explicacion);
 
       response.json({ exercise, solucion });
 

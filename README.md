@@ -20,6 +20,7 @@ Para comenzar con el proyecto, sigue estos pasos:
 mysql -u `<usuario>` -p `<password>` < dump.sql
 
 Asegúrate de reemplazar `<usuario>` y `<password>` con tus credenciales de usuario de MySQL.
-4. La base de datos y la tabla de ejercicios se crearán y se llenarán con ejemplos de datos.
+
+4.La base de datos y la tabla de ejercicios se crearán y se llenarán con ejemplos de datos.
 
 ¡Listo! Ahora tienes una base de datos lista para usar en tu aplicación.
