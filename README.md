@@ -1,11 +1,12 @@
 # backend-ejercicios-full-stack
-#### Proyecto final de curso del Certificado de Profesionalidad IFCT0609 Programación de Sistemas Informáticos.
-El backend de esta plataforma fue desarrollado con las siguientes tecnologías y funcionalidades:
+### Proyecto final de curso del Certificado de Profesionalidad IFCT0609 Programación de Sistemas Informáticos.
+La meta principal era crear un back-end para una plataforma de enseñanza de programación con integración de ChatGPT para ayudar a los alumnos.
+El back-end de esta plataforma fue desarrollado con las siguientes tecnologías y funcionalidades:
 
 - Desarrollo de endpoints para la web utilizando Express.js.
 - Implementación y gestión de conexiones a bases de datos utilizando Express.js para asegurar la integridad y eficiencia de los sistemas.
 - Integración y configuración de ChatGPT como asistente, brindando orientación y soluciones a los retos de programación planteados en la plataforma.
-- Diseño y desarrollo de consultas especializadas a bases de datos, utilizando Node.js y Express.js, para optimizar la interacción entre los usuarios y ChatGPT.
+- Diseño y desarrollo de consultas especializadas a bases de datos MySQL, utilizando Node.js y Express.js, para optimizar la interacción entre los usuarios y ChatGPT.
 
 ### Algunas de las técnologias usadas:
 ![JavaScript](https://img.shields.io/badge/JavaScript-ffee00?style=plastic&logo=javascript&logoColor=black)
@@ -20,7 +21,7 @@ Para comenzar con el proyecto, sigue estos pasos:
 
 1. Clona este repositorio en tu máquina local.
 2. Instala las dependencias necesarias con `npm install`.
-<br>Asegurate de tener instalado NodeJS en tu ordenador.
+Asegurate de tener instalado NodeJS en tu ordenador.
 3. Configura la base de datos ejecutando el siguiente comando:
 `npm run iniDB`.
 
