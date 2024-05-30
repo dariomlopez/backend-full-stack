@@ -3,10 +3,10 @@
 La meta principal era crear un back-end para una plataforma de enseñanza de programación con integración de ChatGPT para ayudar a los alumnos.
 El back-end de esta plataforma fue desarrollado con las siguientes tecnologías y funcionalidades:
 
-- Desarrollo de endpoints para la web utilizando Express.js.
-- Implementación y gestión de conexiones a bases de datos utilizando Express.js para asegurar la integridad y eficiencia de los sistemas.
-- Integración y configuración de ChatGPT como asistente, brindando orientación y soluciones a los retos de programación planteados en la plataforma.
-- Diseño y desarrollo de consultas especializadas a bases de datos MySQL, utilizando Node.js y Express.js, para optimizar la interacción entre los usuarios y ChatGPT.
+- **Desarrollo de endpoints**: Utilización del framework Express.js sobre Node.js para crear y gestionar los endpoints de la web.
+- **Gestión de conexiones a bases de datos**: Implementación y gestión de conexiones a bases de datos utilizando Express.js, asegurando la integridad y eficiencia de los sistemas.
+- **Integración de ChatGPT**: Configuración de ChatGPT como asistente para proporcionar orientación y soluciones a los retos de programación planteados en la plataforma.
+- **Consultas especializadas**: Diseño y desarrollo de consultas a bases de datos MySQL para optimizar la interacción entre los usuarios y ChatGPT.
 
 ### Algunas de las técnologias usadas:
 ![JavaScript](https://img.shields.io/badge/JavaScript-ffee00?style=plastic&logo=javascript&logoColor=black)
