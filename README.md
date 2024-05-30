@@ -1,6 +1,5 @@
 # backend-ejercicios-full-stack
 #### Proyecto final de curso del Certificado de Profesionalidad IFCT0609 Programación de Sistemas Informáticos.
---
 El backend de esta plataforma fue desarrollado con las siguientes tecnologías y funcionalidades:
 
 - Desarrollo de endpoints para la web utilizando Express.js.
