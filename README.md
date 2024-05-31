@@ -6,7 +6,7 @@ El back-end de esta plataforma fue desarrollado con las siguientes tecnologías 
 - **Desarrollo de endpoints**: Utilización del framework Express.js sobre Node.js para crear y gestionar los endpoints de la web.
 - **Gestión de conexiones a bases de datos**: Implementación y gestión de conexiones a bases de datos utilizando Express.js, asegurando la integridad y eficiencia de los sistemas.
 - **Integración de ChatGPT**: Configuración de ChatGPT como asistente para proporcionar orientación y soluciones a los retos de programación planteados en la plataforma.
-- **Consultas especializadas**: Diseño y desarrollo de consultas a bases de datos MySQL para optimizar la interacción entre los usuarios y ChatGPT.
+- **Consultas especializadas**: Diseño y desarrollo de consultas a bases de datos MySQL para almacenar y recuperar datos. Optimización de la interacción entre la base de datos y ChatGPT para proporcionar asistencia basada en los datos guardados.
 
 ### Algunas de las técnologias usadas:
 ![JavaScript](https://img.shields.io/badge/JavaScript-ffee00?style=plastic&logo=javascript&logoColor=black)
